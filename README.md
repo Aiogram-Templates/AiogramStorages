@@ -5,7 +5,7 @@
 **Aiogram-storages** was created to extend the standard fsm_storage options in **aiogram**.
 Our library supports such databases as:
 
-# INSTALLATION
+# Installation
 
     pip install aiogram-storages
 
