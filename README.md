@@ -5,6 +5,9 @@
 **Aiogram-storages** was created to extend the standard fsm_storage options in **aiogram**.
 Our library supports such databases as:
 
+# INSTALLATION
+
+    pip install aiogram-storages
 
 # PostgreSQL
 
@@ -16,6 +19,7 @@ Next, this instance must be passed to the **Dispatcher.**
 ## Example
 
     from aiogram_storages import PGStorage
+    
     storage = PGStorage(username='YourUser', password='YourPassword', db_name='YourDbName')  
     dp = Dispatcher(bot, storage=storage)
 
@@ -38,6 +42,7 @@ Next, this instance must be passed to the **Dispatcher.**
 ## Example
 
     from aiogram_storages import SQLiteStorage
+    
     storage = SQLiteStorage(db_path='your_path')  
     dp = Dispatcher(bot, storage=storage)
 
