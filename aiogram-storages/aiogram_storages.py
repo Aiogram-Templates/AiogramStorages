@@ -143,7 +143,7 @@ class SQLiteStorage(BaseStorage):
     async def get_states_list(self) -> List[Tuple[int, int]]:
         db = await self.get_db()
         async with db.execute("SELECT * FROM aiogram_state") as cursor:
-            items = await cursor.fetchone()
+            items = await cursor.fetchall()
         return [(int(item[1]), int(item[0])) for item in items]
 
 
