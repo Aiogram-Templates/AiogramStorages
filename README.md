@@ -7,7 +7,7 @@ Our library supports such databases as:
 
 # Installation
 
-    pip install aiogram-storages
+    pip install aiogram_storages
 
 # PostgreSQL
 
