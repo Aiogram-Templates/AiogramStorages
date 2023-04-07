@@ -7,7 +7,7 @@ Our library supports such databases as:
 
 # Installation
 
-    pip install aiogram_storages
+    pip install AiogramStotages
 
 # PostgreSQL
 
@@ -18,7 +18,7 @@ In order to use it, you need to create an instance of the **PGStorage** class, t
 Next, this instance must be passed to the **Dispatcher.**
 ## Example
 
-    from aiogram_storages import PGStorage
+    from AiogramStotages.storages import PGStorage
     
     storage = PGStorage(username='YourUser', password='YourPassword', db_name='YourDbName')  
     dp = Dispatcher(bot, storage=storage)
@@ -41,7 +41,7 @@ In order to use it, you need to create an instance of the **SQLiteStorage** clas
 Next, this instance must be passed to the **Dispatcher.**
 ## Example
 
-    from aiogram_storages import SQLiteStorage
+    from AiogramStotages.storages import SQLiteStorage
     
     storage = SQLiteStorage(db_path='your_path')  
     dp = Dispatcher(bot, storage=storage)
